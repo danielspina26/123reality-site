@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>123 Realty – Development-Ready Listings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 1rem 2rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.75rem;
+    }
+    .hero {
+      padding: 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 1rem;
+    }
+    .hero .subline {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #008000;
+    }
+    .content {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .content h3 {
+      margin-top: 2rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      padding: 0.75rem;
+      font-size: 1rem;
+      background: #111;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .suburbs {
+      margin-top: 2rem;
+    }
+    .suburbs ul {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      padding-left: 1.2rem;
+    }
+    .suburbs li::before {
+      content: "\2705  ";
+      color: #008000;
+    }
+    .logos {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      opacity: 0.6;
+    }
+    .logos img {
+      height: 32px;
+      object-fit: contain;
+      filter: grayscale(100%);
+    }
+    .how-it-works {
+      margin-top: 3rem;
+      background: #f0f0f0;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    .how-it-works h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .how-it-works ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .how-it-works li {
+      margin-bottom: 1rem;
+    }
+    footer {
+      margin-top: auto;
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>123 Realty</h1>
+  </header>
+  <section class="hero">
+    <h2>Get Higher Sale Prices with Development-Ready Listings</h2>
+    <p>We work with local real estate agents and developers in Brimbank to give fast, clear guidance on what’s possible on a block — without the fluff, council confusion, or delay.</p>
+    <p class="subline">Fast, local, on-point – our feasibility snapshots help you sell smarter.</p>
+  </section>
+  <div class="content">
+    <h3>What We Do</h3>
+    <ul>
+      <li>📌 Feasibility Snapshots: Concise breakdowns on what’s likely to be approved</li>
+      <li>📍 Hyperlocal intel: Based on real sales, agent feedback, and overlays</li>
+      <li>📞 One contact: We coordinate with drafters, town planners and councils</li>
+    </ul>
+
+    <h3>Want to work with us?</h3>
+    <form name="contact" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Tell us what you need help with..." rows="5"></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/LJ_Hooker_logo.svg/2560px-LJ_Hooker_logo.svg.png" alt="LJ Hooker" style="height: 40px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Ray_White_logo.svg/2560px-Ray_White_logo.svg.png" alt="Ray White" style="height: 40px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Barry_Plant_logo.svg/2560px-Barry_Plant_logo.svg.png" alt="Barry Plant" style="height: 40px;">
+    </div>
+
+    <div class="suburbs">
+      <h3>Areas We Cover</h3>
+      <ul>
+        <li>Albion</li><li>Ardeer</li><li>Cairnlea</li><li>Deer Park</li><li>Delahey</li><li>Kealba</li><li>Keilor</li><li>Keilor Downs</li><li>St Albans</li><li>Sunshine</li><li>Sydenham</li>
+      </ul>
+    </div>
+
+    <div class="how-it-works">
+      <h3>🛠️ How It Works</h3>
+      <ul>
+        <li><strong>1. Send Us a Listing:</strong> Agents send us the address (or link) — even before it’s live.</li>
+        <li><strong>2. We Run Feasibility:</strong> We check overlays, zoning, frontage, land size, recent sales — and deliver a professional summary.</li>
+        <li><strong>3. Use It to Market Smarter:</strong> Buyers love knowing what they could do. It boosts traction and seller confidence.</li>
+        <li><strong>4. We Support Buyers Too:</strong> After sale, we can help your buyer get the outcome — permits, drafting, and coordination.</li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    &copy; 2022 123 Realty. All rights reserved.
+  </footer>
+</body>
+</html>
